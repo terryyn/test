@@ -1,9 +1,6 @@
 $(window).on('resize', function() {
-    if($(window).height() > 400) {
-        $('#body').addClass('limit1200');
+    if($(window).width() < 100) {
+        $('.div').attr('data-placement','left');
         $('#body').removeClass('limit400');
-    }else{
-        $('#body').addClass('limit400');
-        $('#body').removeClass('limit1200');
     }
 })
